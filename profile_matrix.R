@@ -2,7 +2,7 @@
 sequenceStrings <- list(seq1='ACGATGACGC', seq2='GTGCAGCTCT', seq3='GCTGACGCTA', seq4='ACGATCGGCT', seq5='ACGATCGACT')
 stopifnot(length(unique(lapply(sequenceStrings, nchar))) == 1)
 
-## Next we want to create a matrix which has in every cell 1 nucleotide such that every row represents a string of sequence. So if there are 5 sequences of length 10 each, the matrix will be a 5 by 10
+## Next create a matrix which has in every cell 1 nucleotide such that every row represents a string of sequence. So if there are 5 sequences of length 10 each, the matrix will be a 5 by 10
 convertStringToVector <- function(astring){
     result <- c()
     for(i in 1:nchar(astring)){
